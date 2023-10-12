@@ -27,13 +27,6 @@ pipeline {
         }
     }
 
-    post {
-        success {
-            // Clean up or notify on successful build
-        }
-        failure {
-            // Notify or take action on build failure
-        }
-    }
+    
 }
 
