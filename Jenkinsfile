@@ -14,7 +14,7 @@ pipeline {
                 // Build a Docker image with the Dockerfile in the project directory
                 script {
                 
-                    sh "./check.sh"
+                   sh 'docker build -t my-node-app:1.0 .'
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
                 // Deploy your Docker image (e.g., to a Docker registry or Kubernetes)
                 // You would replace this with your actual deployment steps
                
-                sh "kubectl apply -f your-deployment.yaml"
+                sh './check.sh'
             }
         }
     }
