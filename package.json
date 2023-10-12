@@ -1,0 +1,19 @@
+{
+  "name": "contenerize-nodejs-application-and-deploy-with-jenkins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/githubsneha18/Contenerize-NodeJS-application-and-deploy-with-jenkins.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/githubsneha18/Contenerize-NodeJS-application-and-deploy-with-jenkins/issues"
+  },
+  "homepage": "https://github.com/githubsneha18/Contenerize-NodeJS-application-and-deploy-with-jenkins#readme"
+}
