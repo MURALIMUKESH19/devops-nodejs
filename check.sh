@@ -17,5 +17,5 @@ else
 fi
 
 # Deploy a new container (replace this with your actual Docker run command)
-docker run -d --name "$container_name" Contenerize-NodeJS-application-and-deploy-with-jenkins:/
+docker run -d --name "$container_name" Contenerize-NodeJS-application-and-deploy-with-jenkins:1.0
 
