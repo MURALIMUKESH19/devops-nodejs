@@ -11,8 +11,10 @@ if docker ps -q --filter name="$container_name" | grep -q .; then
     docker rm "$container_name"
 else
     echo "No existing container found with the name: $container_name"
+    def customImage = docker.build("my-container:${env.BUILD_ID}")
+    customImage.push()
 fi
 
 # Deploy a new container (replace this with your actual Docker run command)
-docker run -d --name "$container_name" your-image:tag
+docker run -d --name "$container_name" customImage:/
 
