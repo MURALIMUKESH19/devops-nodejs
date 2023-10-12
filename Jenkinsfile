@@ -14,7 +14,6 @@ pipeline {
                 // Build a Docker image with the Dockerfile in the project directory
                 script {
                 
-                    sh "docker build -t contenerize-nodejs-application-and-deploy-with-jenkins:1.0 ."
                     sh "./check.sh"
                 }
             }
