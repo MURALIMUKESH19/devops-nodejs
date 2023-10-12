@@ -13,6 +13,8 @@ pipeline {
             steps {
                 // Build a Docker image with the Dockerfile in the project directory
                 script {
+                
+                    sh "docker build -t Contenerize-NodeJS-application-and-deploy-with-jenkins:/ .
                     sh "./check.sh"
                 }
             }
@@ -22,6 +24,7 @@ pipeline {
             steps {
                 // Deploy your Docker image (e.g., to a Docker registry or Kubernetes)
                 // You would replace this with your actual deployment steps
+               
                 sh "kubectl apply -f your-deployment.yaml"
             }
         }

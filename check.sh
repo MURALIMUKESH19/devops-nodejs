@@ -3,6 +3,7 @@
 # Define the container name
 container_name="my-container"
 
+
 # Check if the container is running
 if docker ps -q --filter name="$container_name" | grep -q .; then
     # Container is running, so stop and remove it
@@ -16,5 +17,5 @@ else
 fi
 
 # Deploy a new container (replace this with your actual Docker run command)
-docker run -d --name "$container_name" customImage:/
+docker run -d --name "$container_name" Contenerize-NodeJS-application-and-deploy-with-jenkins:/
 
