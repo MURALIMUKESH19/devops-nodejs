@@ -25,7 +25,7 @@ pipeline {
                 // You would replace this with your actual deployment steps
                
                 sh './check.sh'
-                sh "kubectl apply -f your-deployment.yaml"
+                
             }
         }
     }
