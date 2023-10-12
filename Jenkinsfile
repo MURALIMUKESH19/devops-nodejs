@@ -13,7 +13,7 @@ pipeline {
             steps {
                 // Build a Docker image with the Dockerfile in the project directory
                 script {
-                    sh "check.sh"
+                    sh "./check.sh"
                 }
             }
         }
